@@ -112,7 +112,7 @@ class _WallpaperScreenState extends State<WallpaperScreen> {
                               ],
                             ),
                           ));
-                          progressString = Wallpaper.ImageDownloadProgress('https://images.pexels.com/photos/1294671/pexels-photo-1294671.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+                          progressString = Wallpaper.ImageDownloadProgress(widget.imgPath);
                           progressString.listen((data) {
                             setState(() {
                               res = data;
@@ -195,10 +195,15 @@ wallpaper(context, imgPath) {
       height: MediaQuery.of(context).size.height,
       child: Hero(
         tag: imgPath,
-        child: Image.asset(
-          imgPath,
+        child: FadeInImage(
+          image: NetworkImage(imgPath),
           fit: BoxFit.cover,
+          placeholder: AssetImage('assets/placeholder.svg'),
         ),
+        // child: Image.network(
+        //   imgPath,
+        //   fit: BoxFit.cover,
+        // ),
       ));
 }
 

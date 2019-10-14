@@ -5,10 +5,13 @@ import 'WallpaperScreen.dart';
 void main() => runApp(MyApp());
 
 final List<String> wallpaperList = [
-  'assets/wallpaper-1.png',
-  'assets/wallpaper-2.png',
-  'assets/wallpaper-3.png',
-  'assets/wallpaper-4.png'
+  'https://raw.githubusercontent.com/Shubh-Sharma/wallpapers_demo/master/assets/wallpaper-1.png',
+  'https://raw.githubusercontent.com/Shubh-Sharma/wallpapers_demo/master/assets/wallpaper-2.png',
+  'https://raw.githubusercontent.com/Shubh-Sharma/wallpapers_demo/master/assets/wallpaper-3.png',
+  'https://raw.githubusercontent.com/Shubh-Sharma/wallpapers_demo/master/assets/wallpaper-4.png'
+  // 'assets/wallpaper-2.png',
+  // 'assets/wallpaper-3.png',
+  // 'assets/wallpaper-4.png'
 ];
 
 class MyApp extends StatelessWidget {
@@ -58,9 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SizedBox(height: 8.0,),
                 Text(
-                  "${wallpaperList.length} wallpapers available",
+                  "${wallpaperList.length} WALLPAPERS AVAILABLE",
                   style: TextStyle(
                     color: Colors.white54,
+                    // fontFamily: 'Montserrat',
                     fontFamily: 'OpenSans',
                     // fontWeight: FontWeight.w400,
                     fontSize: 11.0
@@ -87,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Hero(
                     tag: imgPath,
                     child: FadeInImage(
-                      image: AssetImage(imgPath),
+                      image: NetworkImage(imgPath),
                       fit: BoxFit.cover,
                       placeholder: AssetImage('assets/placeholder.svg'),
                     ),
