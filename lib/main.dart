@@ -9,9 +9,6 @@ final List<String> wallpaperList = [
   'https://raw.githubusercontent.com/Shubh-Sharma/wallpapers_demo/master/assets/wallpaper-2.png',
   'https://raw.githubusercontent.com/Shubh-Sharma/wallpapers_demo/master/assets/wallpaper-3.png',
   'https://raw.githubusercontent.com/Shubh-Sharma/wallpapers_demo/master/assets/wallpaper-4.png'
-  // 'assets/wallpaper-2.png',
-  // 'assets/wallpaper-3.png',
-  // 'assets/wallpaper-4.png'
 ];
 
 class MyApp extends StatelessWidget {
@@ -93,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: FadeInImage(
                       image: NetworkImage(imgPath),
                       fit: BoxFit.cover,
-                      placeholder: AssetImage('assets/placeholder.svg'),
+                      placeholder: AssetImage('assets/placeholder.jpg'),
                     ),
                   ),
                 ),

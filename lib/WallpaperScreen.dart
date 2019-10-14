@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:toast/toast.dart';
+// import 'package:toast/toast.dart';
 import 'package:wallpaper/wallpaper.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
@@ -198,7 +198,7 @@ wallpaper(context, imgPath) {
         child: FadeInImage(
           image: NetworkImage(imgPath),
           fit: BoxFit.cover,
-          placeholder: AssetImage('assets/placeholder.svg'),
+          placeholder: AssetImage('assets/placeholder.jpg'),
         ),
         // child: Image.network(
         //   imgPath,

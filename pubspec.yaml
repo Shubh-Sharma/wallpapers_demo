@@ -1,5 +1,5 @@
-name: wallpaper_app
-description: A new Flutter project.
+name: Judoka
+description: A project for Judo lovers.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -46,11 +46,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/placeholder.svg
-   - assets/wallpaper-1.png
-   - assets/wallpaper-2.png
-   - assets/wallpaper-3.png
-   - assets/wallpaper-4.png
+   - assets/placeholder.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -64,24 +60,6 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: WorkSans
-      fonts:
-        - asset: assets/WorkSans-Regular.ttf
-        - asset: assets/WorkSans-Medium.ttf
-          weight: 500
-        - asset: assets/WorkSans-SemiBold.ttf
-          weight: 600
-        - asset: assets/WorkSans-Bold.ttf
-          weight: 700
-    - family: HelveticaNeue
-      fonts:
-        - asset: assets/HelveticaNeueRegular.ttf
-        - asset: assets/HelveticaNeueMedium.ttf
-          weight: 500
-        - asset: assets/HelveticaNeueBold.ttf
-          weight: 600
-        - asset: assets/HelveticaNeueHeavy.ttf
-          weight: 700
     - family: OpenSans
       fonts:
         - asset: assets/OpenSans-Regular.ttf

@@ -1,4 +1,4 @@
-package com.example.wallpaper_app
+package `in`.example.judoka
 
 import android.os.Bundle
 
